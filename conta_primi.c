@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int n,i,contaPrimi=0,numero,primo,j;
+    int n,i,conta_primi=0,numero,primo,j;
     // inserimento n (1 - 50)
     do{ 
         printf("Quanti numeri vuoi inserire ?\n");
@@ -16,9 +16,9 @@ int main(){
             }
         }
         if(primo==1){
-            contaPrimi++;
+            conta_primi++;
         }
     }
-    printf("Tra i numeri inseriti ci sono %d numeri primi \n",contaPrimi);
+    printf("Tra i numeri inseriti ci sono %d numeri primi \n",conta_primi);
     return 0;  
 }

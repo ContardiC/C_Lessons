@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
-    int num, i, sommaDiv;
-    sommaDiv=0;
+    int num, i, somma_div;
+    somma_div=0;
     do{
          printf("Inserisci un numero positivo \n");
          scanf("%d",&num);
@@ -9,10 +9,10 @@ int main(){
    
     for(i=0;i<num;i++){
         if(num%i==0){
-            sommaDiv+=i; // sommaDiv=sommaDiv+i;
+            somma_div+=i; // sommaDiv=sommaDiv+i;
         }
     }
-    if(sommaDiv==num){
+    if(somma_div==num){
         printf("Il numero inserito e' PERFETTO");
     }else{
         printf("Il numero inserito NON e' PERFETTO");
