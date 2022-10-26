@@ -1,14 +1,14 @@
 #include<stdio.h>
-int contaCifre(int num){
-    int contaC=0;
+int conta_cifre(int num){
+    int conta_c=0;
     if(num<10){
         return 1;
     }
     while(num>1){ 
         num/=10;
-        contaC++;
+        conta_c++;
     }
-    return contaC;
+    return conta_c;
 }
 int main(){
     int num;
@@ -16,6 +16,6 @@ int main(){
          printf("Inserisci un numero positivo \n");
          scanf("%d",&num);
     }while(num<0);
-    printf("Il numero inserito ha %d cifre \n",contaCifre(num));
+    printf("Il numero inserito ha %d cifre \n",conta_cifre(num));
     return 0;
 }
