@@ -10,3 +10,7 @@ funzione ( che si chiama quadrato)
 stampa il suo quadrato 
 TIPO RESTITUITO
 
+
+Scrivere una funzione che riceva un numero n
+e stampi su standard ouput "PARI" se è pari e "DISPARI"
+se è dispari
