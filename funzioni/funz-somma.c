@@ -1,5 +1,5 @@
 #include<stdio.h>
-int somma(int, int );
+int somma(int a, int b);
 int main(){
     int c=3,d=4;
     int res;
@@ -12,5 +12,7 @@ int main(){
     return 0;
 }
 int somma(int a, int b){
-    return a+b;
+    int s;
+    s=a+b;
+    return s;
 }

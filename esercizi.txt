@@ -1,0 +1,7 @@
+Scrivere una funzione che riceve come
+parametro un numero intero e restituisce 
+il suo cubo
+
+Scrivere una funzione che riceve due numeri 
+e restituisce la media aritmetica
+dei due numeri
