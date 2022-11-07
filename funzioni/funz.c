@@ -1,5 +1,5 @@
 #include<stdio.h>
-int somma(int a, int b);
+int somma(int, int );
 int main(){
     int c=3,d=4;
     int res;
