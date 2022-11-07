@@ -5,3 +5,17 @@ il suo cubo
 Scrivere una funzione che riceve due numeri 
 e restituisce la media aritmetica
 dei due numeri
+
+Scrivere una funzione che riceve un numero intero 
+e stampa i suoi divisori 
+
+Scrivere una funzione che riceve 
+un numero intero compreso tra 1 e 10
+e stampa la sua tabellina.
+
+Realizzare una funzione che accetti 
+in ingresso un numero intero n e 
+visualizzi la successione 
+dei numeri interi positivi 
+dispari da 1 a n.
+
