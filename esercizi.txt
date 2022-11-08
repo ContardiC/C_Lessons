@@ -14,7 +14,8 @@ Scrivere una funzione che riceve un numero intero
 e stampa i suoi divisori 
 
 
-
+Letto n da standard input calcolare il valore
+della seguente serie
 
 
 
@@ -37,3 +38,4 @@ n 3
 m 9
 somma= 3 + 4 + 5 + 6 +7 + 8 + 9
 1 2 3 4 5
+stampare tutto l'alfabeto minuscolo 
