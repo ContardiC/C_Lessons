@@ -6,8 +6,17 @@ Scrivere una funzione che riceve due numeri
 e restituisce la media aritmetica
 dei due numeri
 
+
+
+
+
 Scrivere una funzione che riceve un numero intero 
 e stampa i suoi divisori 
+
+
+
+
+
 
 Scrivere una funzione che riceve 
 un numero intero compreso tra 1 e 10
