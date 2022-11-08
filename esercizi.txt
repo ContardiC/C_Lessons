@@ -39,3 +39,16 @@ m 9
 somma= 3 + 4 + 5 + 6 +7 + 8 + 9
 1 2 3 4 5
 stampare tutto l'alfabeto minuscolo 
+
+
+
+
+realizza un programma che visualizza 6 righe
+dove ciascuna contiene i numeri da 1 a 6
+
+1 2 3 4 5 6
+1 2 3 4 5 6
+1 2 3 4 5 6
+1 2 3 4 5 6
+1 2 3 4 5 6
+1 2 3 4 5 6
