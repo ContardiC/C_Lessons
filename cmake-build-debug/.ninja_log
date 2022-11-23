@@ -1,0 +1,15 @@
+# ninja log v5
+1	46	1669215482521116711	CMakeFiles/C_Lessons.dir/cicli/numeri_perfetti.c.o	b9214e53b580bee
+0	47	1669215482521020671	CMakeFiles/C_Lessons.dir/cicli/conta_primi.c.o	7ecd0f0a8fa983d0
+1	48	1669215482520945839	CMakeFiles/C_Lessons.dir/cicli/sommatoria.c.o	ed5d36c3673a3228
+0	49	1669215482521575246	CMakeFiles/C_Lessons.dir/ASCII/ascii.c.o	61e45751a430ff06
+0	49	1669215482521214085	CMakeFiles/C_Lessons.dir/cicli/conta_cifre.c.o	bed246498a38dbf7
+0	49	1669215482520942672	CMakeFiles/C_Lessons.dir/cicli/conta_in_due_sensi.c.o	9d6d2c989dffd455
+47	80	1669215482554675614	CMakeFiles/C_Lessons.dir/cicli/triangolo-croce.c.o	530cf3960047f8a1
+47	85	1669215482557937314	CMakeFiles/C_Lessons.dir/cicli/triangolo.c.o	7d3559ae2406411
+48	88	1669215482563167359	CMakeFiles/C_Lessons.dir/esercizi/es-2.c.o	d8226f343eed3dab
+49	90	1669215482563271482	CMakeFiles/C_Lessons.dir/esercizi/primi.c.o	bcd66f8be489b063
+49	96	1669215482569542220	CMakeFiles/C_Lessons.dir/esercizi/punti-segmento.c.o	d11e50f23aad1e46
+85	117	1669215482592076624	CMakeFiles/C_Lessons.dir/funzioni/euclide.c.o	e3d365db5b36af42
+89	119	1669215482593813514	CMakeFiles/C_Lessons.dir/successioni/fibonacci.c.o	5315299f08f4f095
+91	123	1669215482597526957	CMakeFiles/C_Lessons.dir/funzioni/funz-cubo.c.o	5e35d6d318373fe8
