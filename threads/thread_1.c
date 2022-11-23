@@ -16,7 +16,7 @@ int main(){
 void doOneThing(int *pnum_times){
     int i,j,x;
     for(i=0;i<4;i++){
-        printf("Doing one thing\n");
+        printf("Doing one thing \n");
         for(j=0;j<10000;j++){
             x=x+i;
         }
@@ -26,7 +26,7 @@ void doOneThing(int *pnum_times){
 void doAnotherThing(int *pnum_times){
     int i,j,x;
     for(i=0;i<4;i++){
-        printf("Doing another thing\n");
+        printf("Doing another thing \n");
         for(j=0;j<10000;j++){
             x=x+i;
         }

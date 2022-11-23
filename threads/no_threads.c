@@ -1,6 +1,6 @@
 #include<stdio.h>
-void doOneThing(int *);
-void doAnotherThing(int *);
+void doOneThing();
+void doAnotherThing();
 void doWrapUp(int, int);
 int r1=0,r2=0;
 int main(){
@@ -9,24 +9,18 @@ int main(){
     doWrapUp(r1,r2);
     return 0;
 }
-void doOneThing(int *pnum_times){
-    int i,j,x;
+void doOneThing(){
+    int i;
     for(i=0;i<4;i++){
         printf("Doing one thing\n");
-        for(j=0;j<10000;j++){
-            x=x+i;
-        }
-        (*pnum_times)++;
+        r1++;
     }
 }
-void doAnotherThing(int *pnum_times){
-    int i,j,x;
+void doAnotherThing(){
+    int i;
     for(i=0;i<4;i++){
         printf("Doing another thing\n");
-        for(j=0;j<10000;j++){
-            x=x+i;
-        }
-        (*pnum_times)++;
+        r2++;
     }
 }
 void doWrapUp(int one_times,int another_times){
