@@ -67,10 +67,10 @@ int fattoriale(int n){
     }
     return res;
 }
-int fattorialeDelMinimo(int mult[], int n){
+int fattorialeDelMinimo(int mult[], int dim){
     int min,i;
     min=mult[0];
-    for(i=1;i<n;i++){
+    for(i=1;i<dim;i++){
        if(mult[i]<min){
         min=mult[i];
        } 
