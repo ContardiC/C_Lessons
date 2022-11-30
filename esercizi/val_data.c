@@ -15,7 +15,7 @@ int main(){
 	printf("Inserisci il giorno:\n"); 
 	scanf("%d",&giorno);
 	printf("Inserisci il mese:\n");
-   scanf("%d",&mese);
+    scanf("%d",&mese);
 	printf("Inserisci l'anno ( <= 2022)"); 
 	scanf("%d",&anno);
 	errore=data_valida(giorno,mese,anno);
@@ -46,11 +46,11 @@ int bisestile(int a){
 int data_valida(int g, int m, int a){
 	if (m<1 || m>12) return 2; //se il mese inserito non è valido restituisce 2
 	else {
-		if (a<0 || a>2004) return 3; //se l'anno inserito non è valido restituisce 3
+		if (a<0 || a>2022) return 3; //se l'anno inserito non è valido restituisce 3
 		else {
 			switch(m){                //assegna a max_giorni il numero massimo di giorni del mese inserito
 				case 1: max_giorni=31; break;
-				case 2: if (bisestile(a)) max_giorni=29; //se l'anno è bisestile assegna a max_giorni 29
+				case 2: if (bisestile(a)==1) max_giorni=29; //se l'anno è bisestile assegna a max_giorni 29
 						  else max_giorni=28;              //altrimenti gli assegna 28
 						  break;
 				case 3: max_giorni=31; break;
