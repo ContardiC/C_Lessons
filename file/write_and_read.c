@@ -15,6 +15,7 @@ int main() {
 
     // Scrivi dati nel file
     for (int i = 0; i < 10; i++) {
+        // devono essere prima memorizzati nella RAM
         fprintf(fp, "%s\n%s\n%d\n", libri[i].titolo, libri[i].autore, libri[i].anno_pubblicazione);
     }
 
@@ -24,11 +25,11 @@ int main() {
     // Apri il file in modalità lettura
     FILE *fp_lettura;
     fp_lettura = fopen("libri.txt", "r");
-
+    char titolo[100], autore[100];
+    int anno_pubblicazione;
     // Leggi dati dal file
     while (!feof(fp_lettura)) {
-        char titolo[100], autore[100];
-        int anno_pubblicazione;
+        
         fscanf(fp_lettura, "%[^\n]\n%[^\n]\n%d\n", titolo, autore, &anno_pubblicazione);
         // Usa i dati letti come desideri
     }
