@@ -1,14 +1,3 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
-    "files.associations": {
-        "__hash_table": "c",
-        "__split_buffer": "c",
-        "atomic": "c",
-        "ios": "c",
-        "string": "c",
-        "system_error": "c",
-        "unordered_map": "c",
-        "vector": "c",
-        "stdio.h": "c"
-    }
+  "C_Cpp_Runner.msvcBatchPath": ""
 }
