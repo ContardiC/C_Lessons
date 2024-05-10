@@ -27,4 +27,5 @@ add_executable(C_Lessons
         funzioni/var-globali.c
         serie/serie-a.c
         successioni/radice-quadrata-di-a.c
-        successioni/radice-quadrata.c)
+        successioni/radice-quadrata.c
+        file/write.c)

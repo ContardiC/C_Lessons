@@ -1,3 +1,3 @@
-/Users/carlocontardi/workspace/C_Lessons/cmake-build-debug/CMakeFiles/C_Lessons.dir
-/Users/carlocontardi/workspace/C_Lessons/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/carlocontardi/workspace/C_Lessons/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ccont_a7onnle/repos/C_Lessons/cmake-build-debug/CMakeFiles/C_Lessons.dir
+C:/Users/ccont_a7onnle/repos/C_Lessons/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ccont_a7onnle/repos/C_Lessons/cmake-build-debug/CMakeFiles/rebuild_cache.dir
