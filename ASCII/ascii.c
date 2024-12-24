@@ -3,6 +3,7 @@ int main(){
     char c;
     c=97;
     char d='a';
+    // Stampa le lettere dell'alfabeto ed il corrispettivo valore nel codice ASCII
     for(c=97;c<=122;c++){
         printf("%c \t",c);
     }
