@@ -1,9 +1,0 @@
-es-1 Creare una funzione che riceve una quantità di tempo in formato ore, minuti e secondi e la restituisce espressa solamente in secondi.
-Creare poi un programma che si faccia passare due quantità di tempo e verifichi quale è maggiore utilizzando la funzione precedente e solamente due if nel programma.
-es-2 Creare un programma che fa inserire all’utente tre caratteri e usando una funzione verifica e stampa quanti di questi sono lettere maiuscole.
-
-es-3 Realizzare un programma che acquisisce 
-tramite una funzione le coordinate di due punti 
-un'altra funzione deve calcolare la distanza tra i due punti
-non utilizzare la funzione pow ma creane una chiamata quadrato
-
