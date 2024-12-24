@@ -1,4 +1,4 @@
-
+# Esercizi 
 1. **Hello World**: Scrivi un programma che stampi "Hello, World!".
 2. **Somma di Due Numeri**: Scrivi un programma che chieda all'utente due numeri e mostri la loro somma.
 3. **Pari o Dispari**: Scrivi un programma che verifichi se un numero inserito dall'utente è pari o dispari.
