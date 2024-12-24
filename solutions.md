@@ -1,5 +1,3 @@
-Certo! Ecco tutte le soluzioni in un unico file markdown:
-
 ```markdown
 # Soluzioni Esercizi in Linguaggio C
 
@@ -398,5 +396,7 @@ int main() {
     return 0;
 }
 ```
+```
+Spero ti siano piaciuti, buon coding!  🚀
 
 
