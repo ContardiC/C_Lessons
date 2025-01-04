@@ -30,9 +30,13 @@ int main(int argc, char *argv[])
             // This node is the whole list
             list = n;
         }
-        // If list has number already
-        else
-        {
+        // If number belongs at beginning of list
+        else if(n->number < list->number){
+            n->next = list;
+            list = n;
+        }
+        // If number belongs later in list
+        else{
             // Iterate over nodes in list
             for (node *ptr = list; ptr != NULL; ptr = ptr->next)
             {
@@ -40,6 +44,12 @@ int main(int argc, char *argv[])
                 if (ptr->next == NULL)
                 {
                     // Append node
+                    ptr->next = n;
+                    break;
+                }
+                // If in middle of list
+                if(n->number < ptr->next->number){
+                    n->next = ptr->next;
                     ptr->next = n;
                     break;
                 }
