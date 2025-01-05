@@ -37,7 +37,7 @@ int main()
         printf("1 - Enter an expense.\n");
         printf("2 - Show the list.\n");
         printf("3 - Total expenses made by a person.\n");
-        printf("4 - Save your expenses to a file");
+        printf("4 - Save your expenses to a file.\n");
         printf("5 - Create the list from file. \n");
         scanf("%i", &opt);
 
@@ -137,8 +137,7 @@ int main()
                 {
                     while (current->next != NULL)
                     {
-                        fflust(stdout);
-                        fprintf(f, "%s;%lf;%s\n", current->spesa.name, current->spesa.import, current->spesa.date);
+                        fprintf(f, "%s;%.2lf;%s\n", current->spesa.name, current->spesa.import, current->spesa.date);
                         current = current->next;
                     }
                     fclose(f);
@@ -153,12 +152,12 @@ int main()
             }
             else
             {
-                while (fscanf(f, "%s;%lf;%s\n", name, &import, date) == 1)
-                {
-                    fflush(stdin);
-                    printf("Import: %lf\nName: %s\nDate: %s\n", import, name, date);
-                }
-                fclose(f);
+                // FIX: Correct reading from csv file 
+                // while (fscanf(f, "%s[^;];%lf;%s[^\n]\n", name, &import, date) == 1)
+                // {
+                //     printf("Import: %lf\nName: %s\nDate: %s\n", import, name, date);
+                // }
+                // fclose(f);
             }
             break;
         default:
