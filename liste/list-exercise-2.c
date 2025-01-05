@@ -30,12 +30,15 @@ int main()
     char name[51];
     char date[11]; // DD-MM-YYYY
     int opt;
+    FILE *f;
     do
     {
         printf("0 - Exit.\n");
         printf("1 - Enter an expense.\n");
         printf("2 - Show the list.\n");
         printf("3 - Total expenses made by a person.\n");
+        printf("4 - Save your expenses to a file");
+        printf("5 - Create the list from file. \n");
         scanf("%i", &opt);
 
         switch (opt)
@@ -94,24 +97,68 @@ int main()
             }
             break;
         case 3:
+            fflush(stdin);
             puts("Enter the name whose expenses you want to know? ");
             gets(name);
-            if (head == null)
+            if (head == NULL)
             {
                 puts("List is empty");
             }
             else
             {
                 node *current = head;
-                while (current->next != null)
+                while (current->next != NULL)
                 {
                     if (strcmp(name, current->spesa.name) == 0)
-                    {   printf("%s\n", current->spesa.name);
+                    {
+                        printf("%s\n", current->spesa.name);
                         printf("%lf\n", current->spesa.import);
                         printf("%s\n", current->spesa.date);
                     }
                     current = current->next;
                 }
+            }
+            break;
+        case 4:
+
+            f = fopen("expenses.csv", "a");
+            if (f == NULL)
+            {
+                puts("Data cannot be saved");
+            }
+            else
+            {
+                node *current = head;
+                if (head == NULL)
+                {
+                    puts("List is empty.");
+                }
+                else
+                {
+                    while (current->next != NULL)
+                    {
+                        fflust(stdout);
+                        fprintf(f, "%s;%lf;%s\n", current->spesa.name, current->spesa.import, current->spesa.date);
+                        current = current->next;
+                    }
+                    fclose(f);
+                }
+            }
+            break;
+        case 5:
+            f = fopen("expenses.csv", "r");
+            if (f == NULL)
+            {
+                puts("Cannot read from file");
+            }
+            else
+            {
+                while (fscanf(f, "%s;%lf;%s\n", name, &import, date) == 1)
+                {
+                    fflush(stdin);
+                    printf("Import: %lf\nName: %s\nDate: %s\n", import, name, date);
+                }
+                fclose(f);
             }
             break;
         default:
