@@ -9,17 +9,122 @@
 Si consiglia di memorizzare nel file nel formato CSV
 */
 #include <stdio.h>
-#include <stdllib.h>
-typef struct Spesa{
-    double importo;
-    char persona[51];
-    char data[11]; // DD-MM-YYYY
-}Spesa;
-typedef struct node{
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct Spesa
+{
+    double import;
+    char name[51];
+    char date[11]; // DD-MM-YYYY
+} Spesa;
+typedef struct node
+{
     Spesa spesa;
     struct node *next;
-}node;
-int main(){
+} node;
+int main()
+{
     node *head = NULL;
+    double import;
+    char name[51];
+    char date[11]; // DD-MM-YYYY
+    int opt;
+    do
+    {
+        printf("0 - Exit.\n");
+        printf("1 - Enter an expense.\n");
+        printf("2 - Show the list.\n");
+        printf("3 - Total expenses made by a person.\n");
+        scanf("%i", &opt);
 
+        switch (opt)
+        {
+        case 1:
+            puts("Enter the import:");
+            scanf("%lf", &import);
+            fflush(stdin);
+            fflush(stdin);
+            puts("Enter the person's name:");
+            gets(name);
+            fflush(stdin);
+            puts("Enter the date (DD-MM-YYYY):");
+            gets(date);
+            fflush(stdin);
+            // printf("Import: %lf\nName: %s\nDate: %s\n", import, name, date);
+            node *new_node = malloc(sizeof(node));
+            if (new_node == NULL)
+            {
+                perror("Malloc failed");
+                return 1;
+            }
+            new_node->spesa.import = import;
+            strcpy(new_node->spesa.name, name);
+            strcpy(new_node->spesa.date, date);
+            if (head == NULL)
+            {
+                head = new_node;
+            }
+            else
+            {
+                node *current = head;
+                while (current->next != NULL)
+                {
+                    current = current->next;
+                }
+                current->next = new_node;
+            }
+            break;
+        case 2:
+            // Print whole list
+            if (head == NULL)
+            {
+                printf("List is empty.\n");
+            }
+            else
+            {
+                node *current = head;
+                while (current != NULL)
+                {
+                    printf("%lf\n", current->spesa.import);
+                    printf("%s\n", current->spesa.name);
+                    printf("%s\n", current->spesa.date);
+                    current = current->next;
+                }
+            }
+            break;
+        case 3:
+            puts("Enter the name whose expenses you want to know? ");
+            gets(name);
+            if (head == null)
+            {
+                puts("List is empty");
+            }
+            else
+            {
+                node *current = head;
+                while (current->next != null)
+                {
+                    if (strcmp(name, current->spesa.name) == 0)
+                    {   printf("%s\n", current->spesa.name);
+                        printf("%lf\n", current->spesa.import);
+                        printf("%s\n", current->spesa.date);
+                    }
+                    current = current->next;
+                }
+            }
+            break;
+        default:
+            if (opt == 0)
+            {
+                puts("Good bye.");
+            }
+            else
+            {
+                puts("Wrong input.");
+            }
+            break;
+        }
+
+    } while (opt != 0);
 }
